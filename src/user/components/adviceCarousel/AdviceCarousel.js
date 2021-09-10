@@ -6,7 +6,7 @@ var cards = NewsLists;
 
 export default function Carousel5() {
   return (
-    <div className="app">
+    <div>
       <News data={cards} />
     </div>
   );

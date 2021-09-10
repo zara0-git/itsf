@@ -108,15 +108,17 @@ const customMenuStyle = {
       background: "transparent",
       padding: "0 15px",
       lineHeight: "0.8",
-      fontWeight: "400",
+
       fontSize: "14px",
       color: "black",
-
+      fontWeight: "500",
       borderRadius: 0,
       textTransform: "uppercase",
       textDecoration: "none",
+      transition: "all 0.5s ease",
       "&:hover": {
         color: "#0976B4",
+        fontWeight: "500",
       },
     },
   },

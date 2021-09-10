@@ -1,5 +1,6 @@
 // pages
 import Home from "user/pages/Home.js";
+import SoftwarePage from "user/pages/SoftwarePage";
 import News from "user/pages/News.js";
 import Greeting from "user/pages/introduction/Greeting";
 import Structure from "user/pages/introduction/Structure";
@@ -56,6 +57,10 @@ var routes = [
   {
     path: "/",
     component: Home,
+  },
+  {
+    path: "/software",
+    component: SoftwarePage,
   },
   // {
   //   path: "/introduction",

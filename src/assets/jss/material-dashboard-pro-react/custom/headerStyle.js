@@ -52,6 +52,21 @@ const headerStyle = (theme) => ({
     flex: "1 auto",
     alignItems: "center",
   },
+  appBar1: {
+    backgroundColor: "transparent",
+    boxShadow: "none",
+    borderBottom: "0",
+    marginBottom: "0",
+    width: "100%",
+    zIndex: "1030",
+    color: grayColor[6],
+    padding: 0,
+    transition: "all 150ms ease 0s",
+    minHeight: "50px",
+
+    boxShadow: "10px ",
+    display: "block",
+  },
   appBar: {
     backgroundColor: "#FFFFFF",
     boxShadow: "none",

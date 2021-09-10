@@ -5,7 +5,7 @@ export const MenuList = [
   },
   {
     Name: "Програм хангамж",
-    Url: "",
+    Url: "/home/software",
   },
   {
     Name: "Үйлчилгээ",

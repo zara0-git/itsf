@@ -5,3 +5,11 @@
 .carousel .slide {
   /* height: 300px; */
 }
+@keyframes pulse {
+  from {top: -10px;}
+  to {top: 25vh,}
+}
+@keyframes pulse1 {
+  from {top: -10px;}
+  to {top: 18vh,}
+}

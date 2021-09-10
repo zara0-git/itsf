@@ -1,5 +1,5 @@
 import React from "react";
-import Slider from "react-slick/lib/";
+import Slider from "react-slick";
 import Article from "./Article";
 import "./Carousel4.css";
 import "slick-carousel/slick/slick.css";
@@ -11,7 +11,9 @@ export default function News(props) {
   var settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 3,
+    arrows: false,
+    speed: 500,
+    slidesToShow: 4,
     slidesToScroll: 1,
   };
 
@@ -28,7 +30,7 @@ export default function News(props) {
   }
 
   return (
-    <div className="news">
+    <div>
       <Slider {...settings}>{newsTemplate}</Slider>
     </div>
   );

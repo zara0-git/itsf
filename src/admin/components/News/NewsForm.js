@@ -14,7 +14,7 @@ import BaseRichText from "../FormControls/BaseRichText";
 import BaseSelect from "../FormControls/BaseSelect";
 
 import helper from "admin/helper/index";
-
+import History from "History.js";
 //Just copy and add this withRouterAndRef HOC
 const withRouterAndRef = (WrappedComponent) => {
   class InnerComponentWithRef extends React.Component {

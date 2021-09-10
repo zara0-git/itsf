@@ -20,18 +20,6 @@ export default function (props) {
 
   return (
     <div>
-      <HomeSlider />
-      <div className={classes.container}>
-        <HomeNews />
-      </div>
-      {/*<GridContainer style={{ background: "#FFFFFF" }}>
-          <GridItem xs={12} sm={12} md={12}>
-            <div></div>
-          </GridItem>
-        </GridContainer>
-  */}
-
-      <AboutUs />
       <div className={classes.container}>
         <BusinessType />
       </div>

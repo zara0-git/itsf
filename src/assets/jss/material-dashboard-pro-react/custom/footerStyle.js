@@ -83,9 +83,29 @@ const footerStyle = (theme) => ({
     "& span": {
       fontSize: "14px",
       fontWeight: "300",
+      transition: "all 0.5s ease",
+      // color: "#3C3D8D",
       "&:hover": {
         color: "#0976B4",
         cursor: "pointer",
+      },
+    },
+    "& .link1": {
+      alignItems: "center",
+      background: "transparent",
+      paddingRight: "5px",
+      lineHeight: "0.8",
+      fontWeight: "400",
+
+      color: whiteColor,
+      height: "20px",
+      borderRadius: 0,
+      textTransform: "uppercase",
+      textDecoration: "none",
+      transition: "all 0.5s ease",
+      "&:hover": {
+        backgroundColor: "rgba(0, 0, 0, 0.08)",
+        color: "#0976B4",
       },
     },
     "& > div > span": {

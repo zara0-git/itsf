@@ -7,6 +7,7 @@ import ResponsiveToolbar from "user/components/header/ResponsiveToolbar";
 import Menu from "user/components/header/Menu.js";
 import CustomFooter from "user/components/footer/CustomFooter";
 import ScrollToTopButton from "user/components/ScrollToTopButton";
+import SocialLinks from "user/components/links/SocialLinks";
 
 import { Hidden } from "@material-ui/core";
 
@@ -25,7 +26,7 @@ export default function () {
   };
 
   return (
-    <div>
+    <div style={{ position: "relative" }}>
       <Hidden mdDown>
         <Toolbar />
       </Hidden>
@@ -35,6 +36,9 @@ export default function () {
         {getRoutes(routes)}
         <Redirect to="/home" />
       </Switch>
+      {
+        //     <SocialLinks />
+      }
       <CustomFooter />
       <ScrollToTopButton />
     </div>

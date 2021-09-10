@@ -9,7 +9,7 @@ export default function Article(props) {
 
   return (
     <figure className="snip1584">
-      <div style={{ height: "150px", overflow: "hidden" }}>
+      <div style={{ height: "300px", overflow: "hidden" }}>
         <img src={image} width="100%" height="100%" />
       </div>
       <Link style={{ color: "white" }} to={props.data.Url}>

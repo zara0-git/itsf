@@ -5,9 +5,10 @@ import HeaderItem from "user/components/home-slider/CarouselItem.js";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-import Caro1 from "assets/img/home-carousel/caro4.jpg";
-import Caro2 from "assets/img/home-carousel/caro5.jpg";
-import Caro3 from "assets/img/home-carousel/caro6.jpg";
+import Caro1 from "assets/img/home-carousel/1.jpg";
+import Caro2 from "assets/img/home-carousel/2.jpg";
+import Caro3 from "assets/img/home-carousel/3.jpg";
+import Caro4 from "assets/img/home-carousel/4.jpg";
 
 import arrowImg from "./arrow.png";
 import arrowImgHover from "./arrow-hover.png";
@@ -48,12 +49,31 @@ export default function CarouselComponent() {
   const data = [
     {
       image: Caro1,
+      url: "#",
+      title: "Нүүр хуудас",
+      content:
+        "Програм хангамж боловсруулах, мэргэжлийн сургалт, зөвлөгөө өгөх, мэдээллийн технологийн худалдаа, засвар үйлчилгээ",
     },
     {
       image: Caro2,
+      url: "#",
+      title: "Програм хангамж",
+      content:
+        "Програм хангамж боловсруулах, мэргэжлийн сургалт, зөвлөгөө өгөх, мэдээллийн технологийн худалдаа, засвар үйлчилгээ",
     },
     {
       image: Caro3,
+      url: "#",
+      title: "Тоног төхөөрөмж",
+      content:
+        "Програм хангамж боловсруулах, мэргэжлийн сургалт, зөвлөгөө өгөх, мэдээллийн технологийн худалдаа, засвар үйлчилгээ",
+    },
+    {
+      image: Caro4,
+      url: "#",
+      title: "Үйлчилгээ",
+      content:
+        "Програм хангамж боловсруулах, мэргэжлийн сургалт, зөвлөгөө өгөх, мэдээллийн технологийн худалдаа, засвар үйлчилгээ",
     },
   ];
 
@@ -63,7 +83,10 @@ export default function CarouselComponent() {
     <Carousel
       infiniteLoop={true}
       showArrows={true}
+      autoPlay={true}
       showStatus={false}
+      interval="5000"
+      showThumbs={false}
       renderArrowPrev={(onClickHandler) => (
         <div
           onClick={onClickHandler}
@@ -79,7 +102,7 @@ export default function CarouselComponent() {
       dynamicHeight={true}
     >
       {data.map((item, key) => {
-        return <HeaderItem imgURL={item.image} key={"Item-" + key} />;
+        return <HeaderItem item={item} key={"Item-" + key} />;
       })}
     </Carousel>
   );

@@ -12,20 +12,18 @@ import MailOutlineOutlinedIcon from "@material-ui/icons/MailOutlineOutlined";
 import PinDropIcon from "@material-ui/icons/PinDrop";
 import CallIcon from "@material-ui/icons/Call";
 import ArrowRightIcon from "@material-ui/icons/ArrowRight";
-import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
+
+// icons
 import FacebookIcon from "@material-ui/icons/Facebook";
-import PeopleAltOutlinedIcon from "@material-ui/icons/PeopleAltOutlined";
-import PersonAddOutlinedIcon from "@material-ui/icons/PersonAddOutlined";
-import GroupAddOutlinedIcon from "@material-ui/icons/GroupAddOutlined";
-import SupervisedUserCircleOutlinedIcon from "@material-ui/icons/SupervisedUserCircleOutlined";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
 
 import GridContainer from "components/Grid/GridContainer";
 import GridItem from "components/Grid/GridItem";
-import Access from "user/components/footer/Access";
+
 // styles
 import styles from "assets/jss/material-dashboard-pro-react/custom/footerStyle.js";
-import logo from "assets/img/logo.png";
-import footerTop from "assets/img/footerTopS.png";
+
 import { Links } from "assets/store/Sidebar";
 import { MenuList } from "assets/store/MenuList";
 import { ToolbarMenuList } from "assets/store/ToolbarMenuList";
@@ -50,6 +48,7 @@ export default function CustomFooter(props) {
     <div
       style={{
         backgroundColor: "#2E2E2E",
+        paddingBottom: "30px",
       }}
     >
       <div className={classes.container}>
@@ -108,6 +107,26 @@ export default function CustomFooter(props) {
                       </ListItem>
                     );
                   })}
+                  <ListItem>
+                    <ListItemIcon className={classes.listItemIcon}>
+                      <ArrowRightIcon />
+                    </ListItemIcon>
+                    <ListItemText
+                      classes={{ primary: classes.listItemTextRoot }}
+                    >
+                      <Link to={"#"} className="link1">
+                        <FacebookIcon style={{ height: "25px" }} />
+                      </Link>
+
+                      <Link to={"#"} className="link1">
+                        <TwitterIcon style={{ height: "25px" }} />
+                      </Link>
+
+                      <Link to={"#"} className="link1">
+                        <LinkedInIcon style={{ height: "25px" }} />
+                      </Link>
+                    </ListItemText>
+                  </ListItem>
                 </List>
               </div>
             </div>
