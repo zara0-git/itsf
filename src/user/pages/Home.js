@@ -9,7 +9,7 @@ import GridItem from "components/Grid/GridItem";
 // styles
 import styles from "assets/jss/material-dashboard-pro-react/custom/homePageStyle";
 import HomeSlider from "user/components/home-slider/HomeSlider.js";
-
+import CardCarousel from "user/components/its/card/CardCarousel";
 import HomeNews from "user/components/news/homeNews/HomeNews";
 import BusinessType from "user/components/its/homePage/BusinessTypes";
 import AboutUs from "user/components/its/aboutUs/AboutUs";
@@ -29,12 +29,13 @@ export default function (props) {
             <div></div>
           </GridItem>
         </GridContainer>
-  */}
+    */}
 
       <AboutUs />
       <div className={classes.container}>
         <BusinessType />
       </div>
+      <CardCarousel />
       <br />
       <br />
       <br />
